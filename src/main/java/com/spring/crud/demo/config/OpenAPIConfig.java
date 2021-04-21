@@ -16,8 +16,8 @@ public class OpenAPIConfig {
         return new OpenAPI()
                 .info(new Info().title("CRUD API")
                 .version(appVersion)
-                 .contact(new Contact().name("Rahul Ghadage")
-                         .url("https://github.com/rahul-ghadge"))
+                 .contact(new Contact().name("Puratchidasan Munusami")
+                         .url("https://github.com/puratchidasan"))
                 .description("This is a sample CRUD application using spring data")
                 .termsOfService("http://swagger.io/terms/")
                 .license(new License().name("Apache 2.0").url("http://springdoc.org")));
