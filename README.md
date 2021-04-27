@@ -1,3 +1,5 @@
+[![Quality gate](http://140.238.89.162:8081/api/project_badges/quality_gate?project=springboot)](http://140.238.89.162:8081/dashboard?id=springboot)
+
 # spring-boot-h2-crud
 
 This project explains CRUD (**C**reate, **R**ead, **U**pdate, **D**elete) operations using spring boot and H2 in-memory database.
