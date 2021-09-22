@@ -403,4 +403,14 @@ Or
         "marks": 950
     }
     ``` 
+    To create docker image, run, tag and to push the image to dockerhub,
+    ```
+    docker build -t springio/my_springboot_app .
+
+	docker run -d -p 8088:8088 springio/my_springboot_app
+
+	docker tag springio/my_springboot_app puratchidasan/dasanrepo:v1.0
+
+	docker push puratchidasan/dasanrepo:v1.0
+    ```
 
