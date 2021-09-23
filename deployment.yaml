@@ -21,6 +21,7 @@ spec:
       containers:
       - image: puratchidasan/dasanrepo:v1.0
         name: dasanrepo
+        imagePullPolicy: Always
         resources: {}
 status: {}
 ---
@@ -40,6 +41,6 @@ spec:
     targetPort: 8088
   selector:
     app: demo
-  type: ClusterIP
+  type: LoadBalancer
 status:
   loadBalancer: {}
