@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: demo
+    DEV: DASAN_NODE_1
+  name: demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: demo
+    spec:
+      containers:
+      - image: puratchidasan/dasanrepo:v1.0
+        name: dasanrepo
+        resources: {}
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: demo
+    DEV: DASAN_NODE_1
+  name: demo
+spec:
+  ports:
+  - name: 8088-8088
+    port: 8088
+    protocol: TCP
+    targetPort: 8088
+  selector:
+    app: demo
+  type: ClusterIP
+status:
+  loadBalancer: {}
